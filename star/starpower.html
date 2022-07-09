@@ -718,19 +718,24 @@
 				
 				function togoal(){
 				var i = 0;
-				if(star_what>=10 && document.getElementById("dropdowntarget").value<10){alert("沒辦法到達該星數!!")}
+				if(star_what>=10 && document.getElementById("dropdowntarget").value<10)
+					{alert("沒辦法到達該星數!!")}
 				else{
-				if(star_what<10 && document.getElementById("dropdowntarget").value<star_what){alert("沒辦法到達該星數!!")}else{
+				if(star_what<10 && document.getElementById("dropdowntarget").value<star_what)
+					{alert("沒辦法到達該星數!!")}
+					else{
 					
-				for(i=0 ; i<i+1 ; i++){
+					for(i=0 ; i<i+1 ; i++){
 					rushstar();
+						
 					if (star_what == document.getElementById("dropdowntarget").value){
 						break ;
+													}
+								}
+						}
 					}
-				}
-			}
+																	}
 		}
-			}
 			
 			</script>
 			
