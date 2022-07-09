@@ -721,21 +721,21 @@
 				if(star_what>=10 && document.getElementById("dropdowntarget").value<10)
 					{alert("沒辦法到達該星數!!")}
 				else{
-				if(star_what<10 && document.getElementById("dropdowntarget").value<star_what)
+					if(star_what<10 && document.getElementById("dropdowntarget").value < star_what)
 					{alert("沒辦法到達該星數!!")}
 					else{
 					
-					for(i=0 ; i<i+1 ; i++){
-					rushstar();
+						for(i=0 ; i<i+1 ; i++){
+						rushstar();
 						
-					if (star_what == document.getElementById("dropdowntarget").value){
+						if (star_what == document.getElementById("dropdowntarget").value){
 						break ;
-													}
-								}
+														}
+									}
 						}
 					}
 																	}
-		}
+							}
 			
 			</script>
 			
@@ -967,7 +967,8 @@ P.S. <br>
 1.請不要嘗試衝到25星，有可能會跑不出結果<br>
 
 2.若不防爆衝22星以上，會跑很久需要等一下<br>
-3.如果有測出什麼BUG可以跟會長反應
+3.如果有測出什麼BUG可以跟會長反應<br>
+4.不知道為什麼10星以下目標星數比當前星數還要小的話，會卡住
 
 
 		
