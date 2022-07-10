@@ -455,6 +455,10 @@
 			function rushstar(){
 			//衝星次數+1
 			star_time = star_time + 1 ;
+				
+		if(star_what ==25){
+					alert("你太歐洲了，已無法到達更高星力!!")
+		}else{
 			//亂數1-100
 			ran = (Math.round(Math.random()*1000))/10;
 			document.getElementById("random").innerHTML = "亂數："+ran ;
@@ -518,7 +522,10 @@
 					showalert();
 				}
 			showstar();
+		}	
+			
 			}
+			
 				
 			function showalert(){
 				alert("恭喜!!已經達到目標星數!!")
